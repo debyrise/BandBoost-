@@ -101,7 +101,7 @@ const ForgetPassword = () => {
                   type="submit"
                   variant="outline"
                   className="font-semibold 
-                  w-[80px] h-[40px] xl:w-full xl:h-[54px] 
+                  w-[100px] h-[40px] xl:w-full xl:h-[54px] 
                   rounded-lg text-[13px] leading-[19.5px] 
                   xl:text-base xl:leading-[24px] 
                   bg-[#186EC6] hover:bg-[#f5f5f5] 

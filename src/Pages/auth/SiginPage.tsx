@@ -49,7 +49,7 @@ const SignInPage = () => {
   `;
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-[#ffffff] text-[#121826] px-10">
+    <div className="h-full flex flex-col md:flex-row bg-[#ffffff] text-[#121826]px-5 md:px-10">
       {/* Sidebar */}
       <div className="md:w-1/3 lg:w-1/4 p-8 rounded-r-xl hidden md:block ">
         <div className="mb-6">
@@ -98,7 +98,7 @@ const SignInPage = () => {
             </div>
           </Link>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col justify-center w-full  p-8">
+      <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col justify-center w-full p-5 md:p-8">
            
 
         <div className="max-w-xl mx-auto w-full">
@@ -202,7 +202,7 @@ const SignInPage = () => {
               type="button"
               variant="outline"
               className="border-[#121826] border-2 text-[#121826] hover:bg-[#121826] hover:text-white font-semibold 
-              w-[80px] h-[38px] xl:w-[250px] xl:h-[54px] 
+              w-[100px] h-[38px] xl:w-[250px] xl:h-[54px] 
               rounded-lg text-[13px] leading-[19.5px] 
               xl:text-base xl:leading-[24px] "
             >
@@ -211,7 +211,7 @@ const SignInPage = () => {
             <Button
               type="submit"
               className="font-semibold 
-              w-[80px] h-[38px] xl:w-[250px] xl:h-[54px] 
+              w-[100px] h-[38px] xl:w-[250px] xl:h-[54px] 
               rounded-lg text-[13px] leading-[19.5px] 
               xl:text-base xl:leading-[24px] 
               bg-[#186EC6] hover:bg-[#f5f5f5] 

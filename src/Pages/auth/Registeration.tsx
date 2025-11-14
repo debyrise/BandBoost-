@@ -102,6 +102,7 @@ const Registeration = () => {
           bg-[#186EC6] hover:bg-[#f5f5f5] 
           text-[#f5f5f5] 
           hover:text-[#186EC6] hover:border-2 hover:border-[#186EC6]"         >
+            
             <Link to="/Sign-Up">Next</Link>
         </Button>
 

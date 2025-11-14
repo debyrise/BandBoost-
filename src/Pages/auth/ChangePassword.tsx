@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import { Input } from "../../components/ui/input";
 import { Button } from "../../components/ui/button";
-import { type passwordRecoveryValues, passwordRecoverySchema } from "../../lib/validations";
+import {
+  type passwordRecoveryValues,
+  passwordRecoverySchema,
+} from "../../lib/validations";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ChevronLeft, Eye, EyeOff,  } from "lucide-react";
+import { ChevronLeft, Eye, EyeOff } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Testifiers from "./Testifiers";
 import { Link } from "react-router-dom";
 
 const ChangePassword = () => {
   const navigate = useNavigate();
- const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [showResetPassword, setShowResetPassword] = useState(false);
-
-  
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<passwordRecoveryValues>({ resolver: zodResolver(passwordRecoverySchema) });
+  } = useForm<passwordRecoveryValues>({
+    resolver: zodResolver(passwordRecoverySchema),
+  });
 
   const onSubmit = async (data: passwordRecoveryValues) => {
     console.log("data", data);
@@ -89,27 +92,14 @@ const ChangePassword = () => {
                     className={`${inputClass} pl-5 pr-10`}
                     {...register("newPassword")}
                   />
-                  {/* <button
+
+                  <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 transform  -translate-y-1/2 text-[#ffffff] text-[14px]  font-poppins  leading-[20px] font-semibold   "
+                    className="absolute right-5 top-1/2 -translate-y-1/2 text-[#186EC6] bg-white"
                   >
-                    {showPassword ? (
-                      <EyeOff className="h-5 w-5 text-[#B0B7C3] " />
-                    ) : (
-                      <Eye className="h-5 w-5 text-[#B0B7C3]" />
-                    )}
-                     {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-
-                  </button> */}
-
-                             <button
-              type="button"
-              onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-5 top-1/2 -translate-y-1/2 text-[#186EC6] bg-white"
-            >
-              {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-            </button>
+                    {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                  </button>
                   {errors.newPassword && (
                     <p className="text-red-500 text-xs mt-1">
                       {errors.newPassword.message}
@@ -125,29 +115,21 @@ const ChangePassword = () => {
                       onCopy={(e) => e.preventDefault()}
                       onCut={(e) => e.preventDefault()}
                       placeholder="Confirm Password"
-                    className={`${inputClass} pl-5 pr-10`}
+                      className={`${inputClass} pl-5 pr-10`}
                       {...register("confirmPassword")}
                     />
-                    {/* <button
+
+                    <button
                       type="button"
-                    className="absolute right-3 top-1/2 transform  -translate-y-1/2 text-[#ffffff] text-[14px]  font-poppins  leading-[20px] font-semibold   "
+                      onClick={() => setShowResetPassword(!showResetPassword)}
+                      className="absolute right-5 top-1/2 -translate-y-1/2 text-[#186EC6] bg-white"
                     >
                       {showResetPassword ? (
-                        <EyeOff className="h-5 w-5 text-[#B0B7C3] " />
+                        <EyeOff size={20} />
                       ) : (
-                        <Eye className="h-5 w-5 text-[#B0B7C3]" />
+                        <Eye size={20} />
                       )}
-                     {showResetPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-
-                    </button> */}
-
-              <button
-              type="button"
-             onClick={() => setShowResetPassword(!showResetPassword)}
-              className="absolute right-5 top-1/2 -translate-y-1/2 text-[#186EC6] bg-white"
-            >
-              {showResetPassword ? <EyeOff size={20} /> : <Eye size={20} />}
-            </button>
+                    </button>
                   </div>
                   {errors.confirmPassword && (
                     <p className="text-red-500 text-xs mt-1">
@@ -157,27 +139,23 @@ const ChangePassword = () => {
                 </div>
               </div>
 
-              <div className="mt-5">
-                 <Button
-              type="submit"
-              variant="outline"
-             // disabled={isLoading}
+              <div className="mt-5 items-center flex justify-center">
+                <Button
+                  type="submit"
+                  variant="outline"
+                  // disabled={isLoading}
 
-              className="font-semibold 
-                  w-[80px] h-[40px] xl:w-full xl:h-[54px] 
+                  className="font-semibold 
+                  w-[150px] h-[40px] xl:w-full xl:h-[54px] 
                   rounded-lg text-[13px] leading-[19.5px] 
                   xl:text-base xl:leading-[24px] 
                   bg-[#186EC6] hover:bg-[#f5f5f5] 
                   text-[#f5f5f5]  
                   hover:text-[#186EC6] hover:border-2 hover:border-[#186EC6]"
-            >
-                Reset Password
-              {/* {isLoading ? "Resetting..." : "Reset Password"} */}
-
-            </Button>
-
-
-              
+                >
+                  Reset Password
+                  {/* {isLoading ? "Resetting..." : "Reset Password"} */}
+                </Button>
               </div>
             </form>
           </div>

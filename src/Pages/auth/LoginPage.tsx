@@ -126,7 +126,7 @@ const LoginPage = () => {
               type="submit"
               variant="outline"
               className="font-semibold 
-                  w-[80px] h-[40px] xl:w-full xl:h-[54px] 
+                  w-[100px] h-[40px] xl:w-full xl:h-[54px] 
                   rounded-lg text-[13px] leading-[19.5px] 
                   xl:text-base xl:leading-[24px] 
                   bg-[#186EC6] hover:bg-[#f5f5f5] 
@@ -136,11 +136,11 @@ const LoginPage = () => {
               Sign In
             </Button>
 
-            <p className="text-[13px] lg:text-[16px] mt-2">
+            <p className="text-[13px] lg:text-[16px] mt-2 ">
               Dont have an account?
-              <span className="text-[#186EC6] hover:text-[#155ea9] cursor-pointer font-semibold ">
+              <span className="text-[#186EC6] hover:text-[#155ea9] cursor-pointer font-semibold  ">
                 
-                <Link to="/Sign-Up">Sign Up</Link>
+                <Link to="/Registeration">Sign Up</Link>
               </span>
             </p>
           </div>
