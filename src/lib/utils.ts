@@ -21,14 +21,14 @@ export const documentTitle = (title:string) => {
   }, [title]);
 }
 
-export const useOpenNotification = create<modalProps>((set) => ({
-  isOpen: false,
-  onOpen: () => set({ isOpen: true }),
-  onClose: () => set({ isOpen: false }),
-}));
+
 
 export const useOpenMobile = create<modalProps>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
 }));
+
+
+
+

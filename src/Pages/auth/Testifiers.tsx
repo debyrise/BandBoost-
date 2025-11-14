@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 
 const Testifiers = () => {
     const controls = useAnimation();
-      const [cardsPerView, setCardsPerView] = useState(1);
+      const cardsPerView = (1);
       const [isPaused, setIsPaused] = useState(false);
       const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
