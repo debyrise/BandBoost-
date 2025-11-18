@@ -53,11 +53,11 @@ const EmailOtp = () => {
   };
 
   return (
-    <div className="bg-[#ffffff] text-[#121826]  w-full mt-5 h-full px-[5px] xl:px-[50px]">
-      <div className="flex flex-col lg:flex-row justify-between">
-        <div className="mb-6 bg-slate-200 w-[400px] h-screen hidden lg:block">
+    <div className="bg-[#ffffff] text-[#121826]  w-full  h-screen px-10">
+      <div className="flex  items-center justify-around  ">
+        <div className=" bg-slate-200 w-[400px] h-screen hidden lg:block">
           <Link to={"/Login"}>
-            <div className="text-left justify-center p-4">
+            <div className="text-left justify-center  mt-10 p-4">
               <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-8">
                 <ChevronLeft className="mr-2 text-[#121826]" />
                 BandBoost
@@ -78,7 +78,7 @@ const EmailOtp = () => {
             </div>
           </Link>
            </div>
-        <div className="flex flex-col items-center justify-center px-6 md:px-16">
+        <div className="flex flex-col items-center justify-center px-6 md:px-20 ">
           {/* Mobile Header */}
 
           <h2 className="text-3xl font-bold text-center mb-2">

@@ -55,10 +55,11 @@ const EmailVerification: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-[#f5f5f5] text-[#121826] px-10">
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2">
+    <div className="h-screen flex flex-col md:flex-row bg-[#fffff] text-[#121826] px-10">
+      {/* <div className="w-full  grid grid-cols-1 md:grid-cols-2"> */}
+        <div className="flex items-center justify-between">
         {/* Left: Stepper */}
-        <div className="p-8 md:p-12 rounded-3xl hidden md:block">
+        <div className="p-8  md:p-12 rounded-3xl hidden md:block">
           <Link to={"/"}>
             <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-10">
               <ChevronLeft className="mr-2 text-[#121826]" />
