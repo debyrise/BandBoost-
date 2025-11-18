@@ -40,9 +40,9 @@ const LoginPage = () => {
       `;
 
   return (
-    <div className="bg-[#ffffff] text-[#121826]  w-full mt-5 h-full px-[5px] xl:px-[50px]">
+    <div className="bg-[#ffffff] text-[#121826]  w-full  h-screen  px-[5px] xl:px-[50px]">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="mb-6 bg-slate-200 w-[400px] h-screen hidden lg:block">
+        <div className=" bg-slate-200 w-[400px] h-screen hidden lg:block">
           <Link to={"/"}>
             <div className="text-left justify-center p-4">
               <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-8">
@@ -69,9 +69,18 @@ const LoginPage = () => {
            </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex-1 flex flex-col justify-center p-8"
+          className="flex-1 flex flex-col justify-center  px-8"
         >
-          <div className="mb-4">
+         <div className="text-center">
+           <h3 className="text-[#121826] text-2xl xl:text-3xl font-semibold mb-5">
+               Student {" "}
+          <span className="text-[#186EC6] text-2xl xl:text-3xl font-semibold">
+            Sign In
+          </span>
+        </h3> 
+        
+          </div>        
+         <div className="mb-4">
             <div className=" relative">
               <Input
                 placeholder="Email"

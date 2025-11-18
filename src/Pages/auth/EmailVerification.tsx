@@ -55,11 +55,11 @@ const EmailVerification: React.FC = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col md:flex-row bg-[#fffff] text-[#121826] px-10">
+    <div className="h-screen flex flex-col md:flex-row bg-[#ffffff] text-[#121826] px-10">
       {/* <div className="w-full  grid grid-cols-1 md:grid-cols-2"> */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between flex-col md:flex-row ">
         {/* Left: Stepper */}
-        <div className="p-8  md:p-12 rounded-3xl hidden md:block">
+        <div className="p-8  md:p-12 rounded-3xl hidden md:block bg-red-800">
           <Link to={"/"}>
             <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-10">
               <ChevronLeft className="mr-2 text-[#121826]" />
@@ -101,16 +101,13 @@ const EmailVerification: React.FC = () => {
         </div>
 
         {/* Right: OTP Section */}
-        <div className="md:hidden items-start justify-start flex mt-5">
-            <Link to={"/"}>
-              <div className="text-left justify-center p-4">
-                <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-8">
-                  <ChevronLeft className="mr-2 text-[#121826]" />
-                  BandBoost
-                </h1>
-              </div>
-            </Link>
-          </div>
+        <div className="md:hidden mt-5 mr-20 ">
+           <Link to={"/"}>
+            <div className="text-left justify-center p-4 items-start">
+            <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-8">  <ChevronLeft className="mr-2 text-[#121826]" />BandBoost</h1>
+            </div>
+          </Link>
+      </div>
         <div className="flex flex-col items-center justify-center px-6 md:px-16">
           {/* Mobile Header */}
           
@@ -166,7 +163,7 @@ const EmailVerification: React.FC = () => {
             className={`w-full rounded-xl transition-all duration-300
               ${
                 isOtpComplete
-                  ? "font-semibold  w-[80px] h-[40px] xl:w-full xl:h-[54px]  rounded-lg text-[13px] leading-[19.5px]  xl:text-base xl:leading-[24px]  bg-[#186EC6] hover:bg-[#f5f5f5] text-[#f5f5f5]   hover:text-[#186EC6] hover:border-2 hover:border-[#186EC6]"
+                  ? "font-semibold  w-[100px] h-[40px] xl:w-full xl:h-[54px]  rounded-lg text-[13px] leading-[19.5px]  xl:text-base xl:leading-[24px]  bg-[#186EC6] hover:bg-[#f5f5f5] text-[#f5f5f5]   hover:text-[#186EC6] hover:border-2 hover:border-[#186EC6]"
                   : "bg-gray-300   w-[80px] h-[40px] xl:w-[112px] xl:h-[54px]  rounded-lg text-[13px] leading-[19.5px]  xl:text-base xl:leading-[24px]  text-gray-500 cursor-not-allowed"
               }`}
           >

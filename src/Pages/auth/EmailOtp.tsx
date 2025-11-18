@@ -54,7 +54,7 @@ const EmailOtp = () => {
 
   return (
     <div className="bg-[#ffffff] text-[#121826]  w-full  h-screen px-10">
-      <div className="flex  items-center justify-around  ">
+      <div className="flex  items-center justify-around flex-col md:flex-row ">
         <div className=" bg-slate-200 w-[400px] h-screen hidden lg:block">
           <Link to={"/Login"}>
             <div className="text-left justify-center  mt-10 p-4">
@@ -68,7 +68,7 @@ const EmailOtp = () => {
           <Testifiers />
         </div>
 
-           <div className="lg:hidden ">
+           <div className="lg:hidden mt-5 mr-20 ">
             <Link to={"/Login"}>
             <div className="text-left justify-center p-4">
               <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-8">

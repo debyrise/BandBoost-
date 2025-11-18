@@ -65,7 +65,7 @@ const ForgetPassword = () => {
 
           <div className="w-full  mt-5 ">
             <div className="text-center">
-              <h1 className="text-xl leading-[150%] tracking-[0.2px] font-medium text-[#121826]">
+              <h1 className="text-2xl leading-[150%] tracking-[0.2px] font-medium text-[#121826]">
                 Forget Password?
               </h1>
               <p className="mt-3 text-[#6978A0] text-sm leading-[150%] font-light">
