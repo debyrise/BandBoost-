@@ -21,7 +21,7 @@ const Registeration = () => {
 
   return (
 
-    <div className=" h-screen flex flex-col md:flex-row bg-[#ffffff] text-[#121826] px-10">
+    <div className=" h-screen flex flex-col md:flex-row bg-[#ffffff] text-[#121826] px-5 md:px-10">
     {/* Sidebar Steps */}
     <div className="md:w-1/3 lg:w-1/4 bg-slate-50 p-6 rounded-r-xl hidden md:block ">
         <Link to={"/"}>

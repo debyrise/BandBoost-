@@ -59,7 +59,7 @@ const EmailVerification: React.FC = () => {
       {/* <div className="w-full  grid grid-cols-1 md:grid-cols-2"> */}
         <div className="flex items-center justify-between flex-col md:flex-row ">
         {/* Left: Stepper */}
-        <div className="p-8  md:p-12 rounded-3xl hidden md:block bg-red-800">
+        <div className="p-8  md:p-12 rounded-3xl hidden md:block ">
           <Link to={"/"}>
             <h1 className="text-3xl font-bold text-[#121826] flex items-center mb-10">
               <ChevronLeft className="mr-2 text-[#121826]" />
